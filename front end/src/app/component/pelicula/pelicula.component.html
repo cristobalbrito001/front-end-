@@ -1,0 +1,18 @@
+
+    <article class="article-item" >
+        <div class="imagen-wramp">
+            <img src="{{pelicula.image}}" alt="{{pelicula.title}}">
+        </div>
+        <h2> {{pelicula.title}}</h2>
+        <span class="date">
+            <span class="year" [ngClass]="{
+                            'year-green':pelicula.year == 2016,
+                            'year-red':pelicula.year != 2016
+                        }">
+                {{pelicula.year}}
+            </span>
+        </span>
+        <a href="#">leer mas</a>
+        <button (click)="seleccionar($event, pelicula)">votar fav</button>
+        <div class="clearfix"></div>
+    </article>

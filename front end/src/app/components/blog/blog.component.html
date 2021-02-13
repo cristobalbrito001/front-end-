@@ -1,0 +1,36 @@
+<app-slider 
+[nombre]="'blog'"
+[size]= "'small'"></app-slider>
+<div class="center">
+    <section id="content">
+        <div style="text-align: center;">
+            <h1 class="subheader"> blog </h1>
+        </div>
+        <hr />
+       
+        <div id="article">
+            <article class="article-item" *ngFor="let articulo of articulos">
+                <div class="imagen-wramp">
+                    <img src="{{url + 'image/'+ articulo.image}}" alt="{{articulo.title}}" *ngIf="articulo.image">
+                    <img src="../../../assets/images/Angular_full_color_logo.svg (1).png" alt="{{articulo.title}}" *ngIf="!articulo.image">
+                </div>
+                <h2>{{articulo.title}}</h2>
+                <span class="date">
+                   {{articulo.date}}
+                </span>
+                <a href="#">leer mas</a>
+                <div class="clearfix"></div>
+              </article>
+
+              
+
+        </div>
+       
+       <!-- <div class="article-item" *ngFor="let articulo of articulos">
+            <h2>{{articulo.title}}</h2>
+
+        </div>-->
+    </section>
+    
+    <app-sidebar></app-sidebar>
+</div>
