@@ -1,8 +1,9 @@
 # front-end-
 Debes tener instalado en tu maquina dos herramientas:
 
-⋅⋅* Git
-⋅⋅* NPM (es el gestor de paquetes)
+* Git
+
+* NPM (es el gestor de paquetes)
 
 Para clonar el repositorio desde GitHub usas el comando `git clone` de este repositorio en 
 
